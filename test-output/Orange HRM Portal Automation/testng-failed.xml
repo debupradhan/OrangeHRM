@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Orange HRM Portal Automation]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="Employee page test(failed)">
+    <classes>
+      <class name="test_runner.PIMTestRunner">
+        <methods>
+          <include name="updateEmployeeById"/>
+          <include name="searchEmployeeByName"/>
+          <include name="searchEmployeeByInvalidName"/>
+          <include name="setup"/>
+          <include name="searchEmployeeById"/>
+        </methods>
+      </class> <!-- test_runner.PIMTestRunner -->
+    </classes>
+  </test> <!-- Employee page test(failed) -->
+  <test thread-count="1" name="Login with second user page test(failed)">
+    <classes>
+      <class name="test_runner.EmployeeTestRunner">
+        <methods>
+          <include name="LogOut"/>
+          <include name="updateUserInformation"/>
+          <include name="doLoginWithSecondUsers"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test_runner.EmployeeTestRunner -->
+    </classes>
+  </test> <!-- Login with second user page test(failed) -->
+</suite> <!-- Failed suite [Orange HRM Portal Automation] -->
