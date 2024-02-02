@@ -1,19 +1,54 @@
-1)Login to orange hrm demo site: https://opensource-demo.orangehrmlive.com/
+# Web Automation on OrangeHRM Website with Selenium TestNG
 
-2)Create 2 new employees and save it to a JSON list
+## What is Automation?
 
-3)Now go to PIM dashboard and search by 1st user name. Assert that the user is found.
+Automation is the process of using software tools and scripts to perform tasks that would typically be done manually by a human. In the context of software testing, automation involves using tools to execute test cases and compare the actual results with the expected results automatically.
 
-4)Now click on the user from the search table and update id by random userid
+## Why we use Selenium TestNG for Automation?
 
-5)Now again search the user by new user id from the PIM dashboard menu and assert that the user is found
+Selenium is a popular open-source testing tool widely used for automating web browsers. It allows developers and testers to automate web-based applications' testing across multiple browsers and platforms. Selenium provides a set of APIs to interact with web elements and manipulate their properties and behaviors, making it an ideal tool for automating UI tests.
 
-6)Now logout from admin and login with the 2nd user from your JSON list
+TestNG is a testing framework for Java that is designed to be more flexible and powerful than JUnit. It supports a wide range of testing functionalities, including unit, integration, and end-to-end testing, as well as parallel execution, data-driven testing, and reporting. TestNG is often used with Selenium to create robust and scalable test automation frameworks.# WebAutomation-OrangeHRM-Selenium-TestNG
 
-7)Now click on My Info menu
 
-8)Select Gender and Blood Type and save it
+## Scenario
+1. Login to orange hrm demo site
+https://opensource-demo.orangehrmlive.com/
 
-9)Click on contact details and input address and email
+2. Create 2 new employees and save it to a JSON list
+3. Now go to PIM dashboard and search by 1st user name. Assert that the user is found.
+4. Now click on the user from the search table and update id by random userid
+5. Now again search the user by new user id from the PIM dashboard menu and assert that the user is found
+6. Now logout from admin and login with the 2nd user from your JSON list
+7. Now click on My Info menu
+8. Select Gender and Blood Type and save it
+9. Click on contact details and input address and email
+10. Logout the user
 
-10)Logout the user
+## Technology and Tool Used
+1. JAVA
+2. Selenium webdriver
+3. Testng, TestNG Reportes
+4. Maven
+5. Apache POI API
+6. JESON file
+7. Extent Report
+8. Allure Report
+9. LOG4j API
+10. Eclipse IDE
+
+## Test case check list based on the Scenerio:
+
+- Admin Login with Invalid credential. 
+- Admin Login with valid credential.
+- Create employee without username.
+- Create first employee.
+- create second employee.
+- Search existing employee with invalid name.
+- Search employee with valid name.
+- Update employee Id by random Id.
+- Search employee again with updated employee id.
+- Logout Admin.
+- Login second user with valid credential. 
+- Insert the second user's Gender, Blood, Address and email. 
+- Logout second user. 
